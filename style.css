@@ -1,0 +1,105 @@
+:root {
+    --backgroundColor: #1A202C;
+    --cardColor: #2D3748;
+    --textColor: #E2E8F0;
+
+    --searchBtn: #4299E1;
+    --searchBtnHover: #3182CE;
+
+    --errorText: #E53E3E;
+    --inputBg: #4A5568;
+    --iconBg: #EDF2F7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: var(--textColor);
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1E293B, #2C5282);
+    font-size: 16px;
+}
+
+#container {
+    padding: 20px;
+    width: 350px;
+    background-color: var(--cardColor);
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--textColor);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--inputBg);
+    color: var(--textColor);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--searchBtn);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--searchBtnHover);
+}
+
+#error-msg {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--errorText);
+}
+
+#weather-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 100%;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
