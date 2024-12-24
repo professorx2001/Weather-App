@@ -4,7 +4,7 @@ const tempDisplay = document.getElementById('temp');
 const weatherDisplay = document.getElementById('weather');
 const errorMsg = document.getElementById('error-msg');
 const weatherIcon = document.getElementById('weather-icon');
-const apiKey = "b2b8481a7ad6039dcfbe7c06b87d119f";
+const apiKey = "your_api_key";
 
 searchBtn.addEventListener('click', () => handleSearch());
 
